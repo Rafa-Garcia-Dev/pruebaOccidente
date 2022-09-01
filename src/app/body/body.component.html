@@ -1,0 +1,61 @@
+<!-- ::::::::::::::::::.....Creamos el body....::::::::::::::::::::. -->
+<div class="full-height">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <div class="text-center max-w768 mx-auto">
+                    <h1 class="text-black size24">{{ dataCliente.nombre }}</h1>
+                    <p class="text-gray size16 mb-1">NIT: {{dataCliente.nit}}</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="my-auto">
+                            <p class="size16 mb-0">Capa: <span>{{dataCliente.capa}}</span></p>
+                        </div>
+                        <span class="dot"></span>
+                        <div class="my-auto">
+                            <p class="size16 mb-0">Segmento: <span>{{dataCliente.segmento}}</span></p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <ul class="nav nav-tabs" id="grupoAval" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link active" id="operacion-tab" data-toggle="tab" href="#operacion" role="tab" aria-controls="home" aria-selected="true">Operación</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link disabled" id="indicadores-tab" data-toggle="tab" href="#indicadores" role="tab" aria-controls="profile" aria-selected="false">Indicadores</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link disabled" id="informacion-tab" data-toggle="tab" href="#informacion" role="tab" aria-controls="contact" aria-selected="false">Información al cliente</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-3" id="grupoAvalContent">
+                            <div class="tab-pane fade show active" id="operacion" role="tabpanel" aria-labelledby="operacion-tab">
+                            <p class="size16 text-blue">Indique la línea de crédito que quiere considerar</p>   
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-md-3">
+                                    <div class="card pt-4 card-shadow-hover">
+                                        <img class="img-fluid w-80px d-block mx-auto" src="/assets/images/hands.png" alt="Icon Hands">
+                                        <p class="text-black font-weight-500 mt-3">Cartera ordinaria</p>
+                                        <a class="bg-gray p-2 text-decoration-none text-blue font-weight-600" href="#">Continuar</a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="card pt-4">
+                                        <img class="img-fluid w-80px d-block mx-auto gray-scale" src="/assets/images/leasing.png" alt="Icon House">
+                                        <p class="font-weight-500 text-gray mt-3">Leasing</p>
+                                        <a style="pointer-events: none" class="bg-soft-gray p-2 text-decoration-none text-gray font-weight-600" href="#">Continuar</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            </div>
+                            <div class="tab-pane fade" id="indicadores" role="tabpanel" aria-labelledby="indicadores-tab">...</div>
+                            <div class="tab-pane fade" id="informacion" role="tabpanel" aria-labelledby="informacion-tab">...</div>
+                        </div>
+                        <div class="alert alert-warning mt-5" role="alert">
+                            <p class="text-left mb-0"><i class="fas fa-exclamation-circle"></i> | Las demás líneas de crédito no estarán disponibles por el momento</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
